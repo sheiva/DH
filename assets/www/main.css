@@ -1,0 +1,14 @@
+body{
+	background-image:url('images/crumpledPaper_Bg_Small.jpg');
+	text-align: center;
+}
+
+.posCenter
+{
+  position: absolute;
+  width: 50%;
+  top: 75%;
+  left: 50%;
+  margin-left: -25%;
+  margin-top: -25%;
+}

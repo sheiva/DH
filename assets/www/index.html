@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Desperate Housewares</title>
-
+	<link rel="stylesheet" type="text/css" href="main.css" />
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="json2.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -37,21 +37,30 @@
             path = mediaFile.fullPath,
             name = mediaFile.name;
 
+		var options = new FileUploadOptions();
+		options.fileKey = "photo";
+		options.fileName = name;
+
         ft.upload(path,
             "http://www.desperatehousewares.com/upload_image.php",
             function(result) {
                 console.log('Upload success: ' + result.responseCode);
                 console.log(result.bytesSent + ' bytes sent');
+                console.log(result.response);
             },
             function(error) {
                 console.log('Error uploading file ' + path + ': ' + error.code);
+                console.log(result.response);
             },
-            { fileName: name });
+            options);
     }
 
     </script>
     </head>
     <body>
-        <button onclick="captureImage();">Capture Image</button> <br>
+    	<img src="images/20c24c41c72746011380c9c64885979f.png" width="300" height="">
+    	<!--<img src="images/DesperateHousewaresLogo_bg.png" width="300" height="">-->
+    	<br>
+        <button onclick="captureImage();" class="posCenter"><img src="images/148efd53c06e5980270e9f80175f0780.png" width="100" height="100"></button> <br>
     </body>
 </html>
