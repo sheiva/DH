@@ -40,9 +40,13 @@
 		var options = new FileUploadOptions();
 		options.fileKey = "photo";
 		options.fileName = name;
-
+		options.chunkedMode = false;
+		options.params = new Object();
+		options.params.hi = "there";
+		
         ft.upload(path,
-            "http://www.desperatehousewares.com/upload_image.php",
+            "http://www.desperatehousewares.com/up.php",
+            //"http://www.mobvcasting.com/up/index.php",
             function(result) {
                 console.log('Upload success: ' + result.responseCode);
                 console.log(result.bytesSent + ' bytes sent');
