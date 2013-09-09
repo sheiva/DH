@@ -10,15 +10,27 @@ body{
 }
 
 #container{
-	height: 100%;
+	height: 99%;
+	width: auto;
 	margin:0;
 	padding:0;
 	border:0;
+	border: 2px solid orange;
+}
+
+#content{
+	display: block;
+	width: 30%;
+	max-width:387px;
+	min-width:100px; 
+    height: auto;
+    margin:0 auto;
+    border: 2px solid green;
 }
 
 #logo{
-	text-align: center;
-	margin-top: 10%; 
+	max-width: 100%;
+	height: auto;
 }
 
 #footer{
@@ -38,27 +50,23 @@ body{
 }
 
 #homebuttons{
+    border: 1px solid blue;
+    width:auto;
+    min-width: 261px;
+    max-width:387px;
+    margin: 0 auto;
+}
+
+#homeleftbtn{
+    border: 1px solid purple;
+    float: left;
+}
+
+#homerightbtn{
+	border: 1px solid purple;
+	float: right;
+}
+
+.clear{
 	clear: both;
-    border: 1px solid green;
-    color: White;
-    padding: 0;
-    text-align: center;
-    vertical-align: middle;
-    line-height: normal;
-    margin: 0;
-    bottom: 15%;
-    height: 100px;
-    width: 100%;
-}
-.leftButton{
-	position: absolute;
-  	width: 50%;
-  	margin-left: 0;
-}
-.rightButton{
-	position: absolute;
-  	width: 50%;
-  	float:right;
-  	right:0px;
-  	top: 0px;
 }

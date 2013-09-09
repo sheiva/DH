@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
     <title>Desperate Housewares</title>
 	<link rel="stylesheet" type="text/css" href="main.css" />
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
@@ -63,17 +64,31 @@
     </script>
     </head>
     <body>
-		<div id="container">
+	<div id="container">
+		
+		<div id="content">		
 			
-			<div id="logo"><img src="images/logo.png"/></div>
-    	
-    		<br>
+			<div id="logo"><img src="images/logo2.png"/></div>
+ 
         	<div id="homebuttons">
-       			<button onclick="captureImage();" class="leftButton"><img src="images/148efd53c06e5980270e9f80175f0780.png" width="80" height="80"></button> <br>
-        		<br>
-        		<button class="rightButton"><a href="browse.html"><img src="images/browse_btn.png" width="80" height="80"></a></button> <br>
+        	
+        		<div id="homeleftbtn">
+        			<a href="browse.html"><img src="images/browse.png"/></a>
+        		</div>
+        		
+       			<div id="homerightbtn" onclick="captureImage();">
+        			<img src="images/camera.png"/>
+        		</div>
+       		
+       			<div class="clear"></div>
+       		
+       			<!--<button onclick="captureImage();" class="leftButton"><img src="images/camera.png" width="80" height="80"></button>--> 
+        		<!--<button class="rightButton"><a href="browse.html"><img src="images/browse.png" width="80" height="80"></a></button>-->
+    		
     		</div>
+    		
+    	</content>
     	
-    	</div>
-    	</body>
+    </div>
+    </body>
 </html>
